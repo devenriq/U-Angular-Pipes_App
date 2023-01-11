@@ -33,6 +33,26 @@ export class MenuComponent implements OnInit{
               {label: 'Delete', icon: 'pi pi-fw pi-trash'},
               {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
           ]
+      },
+      {
+        label: 'Prueba',
+        items: [{
+          label:'primer item de la prueba',
+          icon: 'pi pi-moon',
+          items:[
+            {
+              label: 'subprojecto 1',
+              icon: 'pi pi-fw pi-pencil',
+              // iconPos: 'Right'
+            },
+            {
+              label: 'subprojecto 2',
+              icon: 'pi pi-fw pi-pencil',
+              // iconPos: 'Right'
+            }
+
+          ]
+        }]
       }
   ];
   }

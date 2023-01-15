@@ -8,4 +8,6 @@ export class BasicosComponent {
   nameLower:string='enrique'
   nameUpper:string='ENRIQUE'
   fullName: string= 'EnrIqUE pAlOmiNo'
+
+  fecha: Date = new Date();
 }

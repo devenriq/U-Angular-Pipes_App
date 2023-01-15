@@ -9,4 +9,14 @@
       <i class="pi pi-dollar"></i> {{ ventasNetas | number : "1.2-2" }}
     </p-card>
   </div>
+  <div class="col-4">
+    <p-card header="Ventas Brutas" subheader="del presente Año">
+      {{ ventasNetas + 200000 | currency : "PEN" : "symbol-narrow" : "1.0-4" }}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="Ganancia Porcentual" subheader="del presente Año">
+      {{ porcentaje | percent : "1.2-2" }}
+    </p-card>
+  </div>
 </div>

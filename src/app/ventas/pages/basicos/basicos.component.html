@@ -41,6 +41,13 @@
         <li>fecha | date:'E, EE & EEE'</li>
         <li>fecha | date:'Personalizado'</li>
       </ul>
+      <hr />
+      <ul>
+        <li>fecha | date : "long" : "GMT-0"</li>
+        <li>fecha | date : "long" : "GMT-4"</li>
+        <li>fecha | date : "long" : "GMT-9" : "en"</li>
+        <li>fecha | date : "long" : "GMT-9" : "fr"</li>
+      </ul>
     </p-card>
   </div>
   <div class="col-6">
@@ -58,6 +65,13 @@
         <li>
           {{ fecha | date : "GGGG, yyy, LLLL, W, cccccc, hh, m, s, ZZZZ" }}
         </li>
+      </ul>
+      <hr />
+      <ul>
+        <li>{{ fecha | date : "long" : "GMT-0" }}</li>
+        <li>{{ fecha | date : "long" : "GMT-4" }}</li>
+        <li>{{ fecha | date : "long" : "GMT-9" : "en" }}</li>
+        <li>{{ fecha | date : "long" : "GMT-9" : "fr" }}</li>
       </ul>
     </p-card>
   </div>

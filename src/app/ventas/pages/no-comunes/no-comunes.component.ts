@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -66,4 +67,6 @@ heroes=[
   }
 ]
 
+  // Async Pipe
+  miObserbable = interval(1000)
 }

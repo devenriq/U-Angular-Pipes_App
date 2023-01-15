@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
 })
 export class NoComunesComponent {
 
+  index:number = 0
   // i18nSelect
-  name: string='Enrique'
-  genero: string= 'masculino'
+  clientsList={
+
+    name:'Enrique',
+    genero: 'masculino'
+  }
+
   invitacionMap={
     'masculino': 'invitarlo',
     'femenino': 'invitarla',
@@ -17,13 +22,25 @@ export class NoComunesComponent {
   // i18nPlural
   clientes:string[]=[
     'María',
-        'Pedro',
+    'Pedro',
+    'Enrique',
+    'Juan',
+    'Ernesto',
+    'Lucas'
 
   ]
   clientesMap={
     '=0':'no tenemos clientes esperando',
     '=1': 'tenemos un cliente esperando',
     'other': 'tenemos # clientes esperando'
+  }
+
+  cambiarCliente(){
+
+  }
+
+  borrarCliente(){
+    this.clientes.pop()
   }
 
 }

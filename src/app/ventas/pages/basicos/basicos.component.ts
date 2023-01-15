@@ -5,5 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './basicos.component.html',
 })
 export class BasicosComponent {
-
+  nameLower:string='enrique'
+  nameUpper:string='ENRIQUE'
+  fullName: string= 'EnrIqUE pAlOmiNo'
 }
